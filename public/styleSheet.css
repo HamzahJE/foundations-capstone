@@ -11,6 +11,7 @@
     color: #edf0f1;
 
 }
+
 li , button ,a {
     color: #edf0f1;
     text-decoration: none;
@@ -47,6 +48,14 @@ header {
 
  }
 
+#cBtn{
+    background-color: #0088a9;
+}
+#cBtn:hover{
+    transition: all 0.3s ease 0s;
+    background-color: rgb(4, 114, 141);
+
+}
 button{
     padding: 9px 25px;
     border: none;
@@ -60,6 +69,7 @@ button{
 button:hover{
     background-color: rgb(4, 114, 141);
 }
+
 div{
     box-sizing: border-box;
     display: flex;
@@ -89,9 +99,9 @@ transition: all 0.3s ease 0s;
 }
 
 #motivationPageNav{
-    margin-top: 30px;
+    margin: 30px 15% 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #motivationPageContent{
@@ -100,27 +110,31 @@ transition: all 0.3s ease 0s;
     justify-content: space-around;
 }
 
-/* .quoteContainer{
-    padding: 10px;
-    width: 20em;
-    height: 20vh;
+ #quoteContainer{
+    position: relative;
+    border: 2px solid #0088a9;
+    margin-left: 40px;
+    width: 30%;
 }
-.dogContainer{
-    padding: 10px;
-    width: 20em;
-    height: 20vh;
+#dogPictureContainer{
+    border: 2px solid #0088a9;
+    margin-right:  40px;
+    width: 30%;
 
 }
-.timerContainer{
-    padding: 10px;
-    width: 20em;
-    height: 20vh;
-
-} */
-
-#dogPicture{
-    width: fit-content;
+#dogPicBtn{
+margin-right: 30px;
 }
+
+ 
+#dogImg{
+    max-width: 540px ;
+    max-height: 60vh ;
+    width: auto;
+    height: auto;
+}
+
+
 /* 
 #circle{
     display: flex;
@@ -134,6 +148,55 @@ transition: all 0.3s ease 0s;
         background: #0088a9;
        
 } */
+ #contactTitle{
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+} 
+
+#contactContainer{
+   
+    margin-top: 20px;
+    display: relative;
+ 
+
+}
+#formContainer{
+display: block;
+width: 480px;
+}
+.nameDiv{
+    padding: 15px;
+    justify-content:left;
+}
+label{
+    width: 50%;
+}
+.contactInput{
+    width: 50%;
+}
+
+#contactSubmit{
+    margin-top: 30px;
+    background-color: #0088a9;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#contactSubmit:hover{
+    cursor:pointer;
+    background-color: rgb(4, 114, 141);
+
+}
 
 
+#timerContainer{
+    font-size: 25px;
+    border: 2px solid #0088a9;
+
+} 
 

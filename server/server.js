@@ -16,6 +16,7 @@ const {displayQuote, displayDogPic}=require('./controller')
 app.get('/api/quote',displayQuote)
 
 app.get('/api/dogPic',displayDogPic)
+
   
 
 
