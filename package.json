@@ -1,0 +1,20 @@
+{
+    "name": "capstone-file",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node server/index.js"
+    },
+    "keywords": [],
+    "author": "Hamzah",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.4",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "rollbar": "^2.25.0"
+    }
+}

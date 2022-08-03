@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a ;
+    font-family: Quicksand;
+    font-size: 16pt;
+    font-weight: 300;
+    color: #edf0f1;
+
+}
+li , button ,a {
+    color: #edf0f1;
+    text-decoration: none;
+    
+}
+header {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    
+    
+}
+
+
+#nav_links{
+    list-style: none;
+ 
+}
+
+#nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+#nav_links li a{
+   transition: all 0.3s ease 0s;
+    
+}
+
+#nav_links li a:hover{
+    color: #0088a9;     
+    cursor: pointer;
+
+ }
+
+button{
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+
+}
+
+button:hover{
+    background-color: rgb(4, 114, 141);
+}
+div{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+img{
+    display:block;
+    margin-right: auto;    
+    margin-left: auto;
+    height: 85vh ;
+    padding: 8px ;
+}
+
+
+#intro {
+    position: absolute;
+    left: 7%;
+    font-size: 25pt;
+    transition: all 0.3s ease 0s;
+
+}
+
+#intro:hover {
+color: #0088a9;
+transition: all 0.3s ease 0s;
+
+}
+
+#motivationPageNav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#motivationPageContent{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .quoteContainer{
+    padding: 10px;
+    width: 20em;
+    height: 20vh;
+}
+.dogContainer{
+    padding: 10px;
+    width: 20em;
+    height: 20vh;
+
+}
+.timerContainer{
+    padding: 10px;
+    width: 20em;
+    height: 20vh;
+
+} */
+
+#dogPicture{
+    width: fit-content;
+}
+/* 
+#circle{
+    display: flex;
+
+    margin-top: 50px;
+        width: 200px;
+        height: 200px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius:100px;
+        background: #0088a9;
+       
+} */
+
+
+
