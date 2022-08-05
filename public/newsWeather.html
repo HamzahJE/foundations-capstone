@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet"  href="styleSheet.css">
+
 </head>
 <body>
     <header>
@@ -19,13 +20,28 @@
         </nav>
         <a id="contact" href="contact.html"> <button id="cBtn">Contact</button></a> 
     </header>
-</head>
-<div>
-    
+
+<div id="cityInputLabel">Enter City:</div>
+<div id="cityInputContainer">
+<form id="cityForm">
+<div >
+        <div><input type="text" name="cityInput" placeholder="Enter City Name" id="cityInput" required></div>
+</div>
+    <div ><input type="submit"  Value="Submit" id="submitCity"></div>
+</form>
 </div>
 
+<div id="newsPageNav">
+<div id="weatherNav">Weather</div>
+<div id="newsNav">News</div>
+</div>
+
+<div id="pageBody">
+    <div id="weatherContainer"></div>
+    <div id="newsContainer"></div>
+</div>
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="newsWeather.js"></script>
 </body>
 </html>

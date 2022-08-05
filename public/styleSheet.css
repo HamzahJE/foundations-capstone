@@ -18,6 +18,7 @@ li , button ,a {
     
 }
 header {
+    border-bottom: 2px solid #0088a9;
     display: flex;
     justify-content:flex-end;
     align-items: center;
@@ -97,9 +98,10 @@ color: #0088a9;
 transition: all 0.3s ease 0s;
 
 }
-
+/* ----------------------------------------------------------------------------------------------------MOTIVATION/MAIN----------------------------------------------------------------------------------------------------------- */
 #motivationPageNav{
-    margin: 30px 15% 0px;
+    /* border-bottom: 2px solid #0088a9; */
+    margin: 60px 15% 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -112,12 +114,17 @@ transition: all 0.3s ease 0s;
 
  #quoteContainer{
     position: relative;
-    border: 2px solid #0088a9;
+    box-shadow: 0 0 10px 5px #0088a9;
+
+    /* border: 2px solid #0088a9; */
     margin-left: 40px;
     width: 30%;
+    
 }
 #dogPictureContainer{
-    border: 2px solid #0088a9;
+    /* border: 2px solid #0088a9; */
+    max-width: 450px ;
+    box-shadow: 0 0 10px 5px #0088a9;
     margin-right:  40px;
     width: 30%;
 
@@ -128,13 +135,17 @@ margin-right: 30px;
 
  
 #dogImg{
-    max-width: 540px ;
+    max-width: 450px ;
     max-height: 60vh ;
     width: auto;
     height: auto;
 }
 
+#timerContainer{
+    font-size: 25px;
+  
 
+} 
 /* 
 #circle{
     display: flex;
@@ -148,6 +159,9 @@ margin-right: 30px;
         background: #0088a9;
        
 } */
+
+/* ----------------------------------------------------------------------------------------CONTACT----------------------------------------------------------------------------------------------------------------------- */
+
  #contactTitle{
     font-size: 20pt;
     margin-top: 20px;
@@ -177,7 +191,7 @@ label{
     width: 50%;
 }
 
-#contactSubmit{
+#submitBtn{
     margin-top: 30px;
     background-color: #0088a9;
     padding: 9px 25px;
@@ -187,16 +201,97 @@ label{
     transition: all 0.3s ease 0s;
 }
 
-#contactSubmit:hover{
+#submitBtn:hover{
     cursor:pointer;
     background-color: rgb(4, 114, 141);
 
 }
 
 
-#timerContainer{
-    font-size: 25px;
+/* ------------------------------------------------------------------------------------NEWS/WEATHER--------------------------------------------------------------------------------------------------------------------------- */
+
+#cityInputLabel{
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 18pt;
+    justify-content: center;
+}
+#cityInput{
+    display: block;
+    justify-content: center;
+}
+#submitCity{
+    margin-top: 10px;
+    background-color: #0088a9;
+    padding: 7px 9px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#submitCity:hover{
+    cursor:pointer;
+    background-color: rgb(4, 114, 141);
+
+}
+#newsPageNav{
+    /* border-bottom: 2px solid #0088a9; */
+    margin: 30px 15% 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#newsNav{
+    border-bottom: 2px solid #0088a9;
+    display: block;
+    justify-content: space-between;
+}
+
+#newsContainer{
+    display: flex;
+    flex-direction: block;
+    border: 2px solid #0088a9;
+}
+
+
+#weatherContainer{
+    display: flex;
+    flex-direction: block;
     border: 2px solid #0088a9;
 
-} 
+}
+#weatherNav{
+    border-bottom: 2px solid #0088a9;
+    display: block;
+    justify-content: space-between;
+}
+#pageBody{
+    margin: 30px 2% 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
 
+
+
+
+.card-header{
+    justify-content: center;
+}
+.card-body{
+    display: block;
+}
+.card-text{
+    display: block;
+
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+  :-moz-placeholder {
+    text-align: center;
+  }

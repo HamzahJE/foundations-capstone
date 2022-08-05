@@ -1,9 +1,8 @@
 
 const quoteBtn= document.querySelector('#quoteBtn')
 const dogPicBtn= document.querySelector('#dogPicBtn')
-const fname=document.getElementById('fname')
-const lname=document.getElementById('lname')
-const gmail=document.getElementById('email')
+
+
 
 
 let baseURL="http://localhost:4007"
@@ -43,10 +42,6 @@ const displayDogPic= (evt) =>{
 
 quoteBtn.addEventListener('click',displayQuote)
 dogPicBtn.addEventListener('click',displayDogPic)
-
-fname.addEventListener('submit',console.log('hi'))
-lname.addEventListener('submit',console.log('hi'))
-gmail.addEventListener('submit',console.log('hi'))
 
 
 

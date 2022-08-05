@@ -11,16 +11,21 @@ app.get('/', function(req,res) {
   })
 
 
-const {displayQuote, displayDogPic}=require('./controller')
+const {displayQuote, displayDogPic, getWeather, getNews, seed, addContact}=require('./controller')
 
 app.get('/api/quote',displayQuote)
 
 app.get('/api/dogPic',displayDogPic)
 
-  
+app.get('/api/weather',getWeather)
 
 
+app.get('/api/news',getNews)
 
+
+app.post(`/seed`,seed)
+
+app.post(`/contact`,addContact)
 
 
 
