@@ -2,10 +2,10 @@
     "name": "capstone-file",
     "version": "1.0.0",
     "description": "",
-    "main": "main.js",
+    "main": "server/server.js",
     "scripts": {
         "test": "jest",
-        "start": "node server.js"
+        "start": "node server/server.js"
     },
     "keywords": [],
     "author": "Hamzah",
