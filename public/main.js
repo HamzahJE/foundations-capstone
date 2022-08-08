@@ -12,7 +12,7 @@ const dogContainer=document.getElementById('dogPictureContainer')
 
 const displayQuote=(evt)=>{
   evt.preventDefault()
-  axios.get(`${baseURL}/api/quote`)
+  axios.get(`/api/quote`)
       .then(res =>  {
         quoteContainer.innerHTML=''
         let quote=res.data
@@ -25,7 +25,7 @@ const displayQuote=(evt)=>{
 
 const displayDogPic= (evt) =>{
   evt.preventDefault()
-  axios.get(`${baseURL}/api/dogPic`)
+  axios.get(`/api/dogPic`)
   .then(res => {
     dogContainer.innerHTML=''
     let dogPic=res.data

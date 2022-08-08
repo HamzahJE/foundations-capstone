@@ -17,7 +17,7 @@ const sendContact =(evt)=>{
     }
     console.log(userObj)
 
-axios.post(`${baseURL}/contact`,userObj)
+axios.post(`/contact`,userObj)
 .then(() => {
     alert("Message Sent")
     console.log('Obj sent to DB')

@@ -8,7 +8,7 @@ let baseURL="http://localhost:4007"
 
 const getWeather= (evt)=>{
     evt.preventDefault()
-    axios.get(`${baseURL}/api/weather?city=${city.value}`)
+    axios.get(`/api/weather?city=${city.value}`)
     .then(response =>{
         weatherContainer.innerHTML=''
         const weatherDiv=document.createElement('div')
@@ -31,7 +31,7 @@ const getWeather= (evt)=>{
 
 const getNews= (evt)=>{
     evt.preventDefault()
-    axios.get(`${baseURL}/api/news?q=${city.value}`)
+    axios.get(`/api/news?q=${city.value}`)
     .then(response =>{
         newsContainer.innerHTML=''
         const newsDiv=document.createElement('div')
