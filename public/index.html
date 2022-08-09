@@ -7,7 +7,10 @@
 	<link rel="stylesheet"  href="styleSheet.css">
     <title>Motivation</title>
 </head>
+
 <body>
+    <section id="vanta-canvas">
+
     <header>
          <a id="intro" href="index.html" >Daily App</a> 
 
@@ -19,22 +22,68 @@
         <a id="contact" href="contact.html"> <button id="cBtn">Contact</button></a> 
 
     </header>
+
 <div id="motivationPageNav">
 <button id="quoteBtn">Click Here <br>Motivation Quote</button>
 <button id="dogPicBtn">Click Here <br>Dog Pictures</button>
 </div>
 
-<div id="motivationPageContent">
+<div id="motivationPageContent" >
+    
+    <div id="quoteContainer"></div>
 
-        <div id="quoteContainer"></div>
-
-        <div id="timerContainer">Timer </div>
+        <div id="timerContainer">
+            <div id="timerHeader">Pomodoro <br> Timer</div>
+            
+            <div id="timerCircle">
+                <div id="time">
+                <span id="timerTime" class="count-digit">2</span>
+                <span id="timerTime" class="count-digit">5</span>
+                <span id="timerTime" class="separator">:</span>
+                <span id="timerTime" class="count-digit">0</span>
+                <span id="timerTime" class="count-digit">0</span>
+            </div>
+              </div>
+              <div class="options">
+                <button class="timer-btns" id="stop-timer">Stop
+                </button>
+                <button class="timer-btns" id="start-timer">Start
+                </button>
+                <button class="timer-btns" id="reset-timer">Reset
+                </button>
+            </div>
+        </div>
 
         <div id="dogPictureContainer"></div>
 
 </div>
+</section>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.birds.min.js"></script>
+<script type="text/javascript">
+VANTA.BIRDS({
+  el: "#vanta-canvas",
+  mouseControls: false,
+  touchControls: false,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color1: 0x3850,
+  color2: 0x30818e,
+  colorMode: "variance",
+  birdSize: 2.00,
+  wingSpan: 19.00,
+  speedLimit: 4.00,
+  separation: 56.00,
+  alignment: 54.00,
+  cohesion: 38.00,
+  quantity: 2.00
+})
 
+</script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 </body>

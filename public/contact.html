@@ -8,6 +8,8 @@
     <link rel="stylesheet"  href="styleSheet.css">
 </head>
 <body>
+    <section id="vanta-canvas">
+
     <header>
         <a id="intro" href="index.html" >Daily App</a> 
 
@@ -30,21 +32,44 @@
 <div class="nameDiv"><label for="fname">Enter First Name:</label>
     <input type="text" name="fname" placeholder="Enter First Name" id="fnameInput" class="contactInput" required>
 </div>
+
 <div class="nameDiv"><label for="lname">Enter Last Name:</label>
     <input type="text" name="lname" placeholder="Enter Last Name" id="lnameInput" class="contactInput" required>
 </div>
+
 <div class="nameDiv"><label for="email">Enter Email Address:</label>
     <input type="text" name="email" placeholder="Enter Email Address" id="emailInput" class="contactInput" required>
 </div>
+
+
 <div class="nameDiv"><label for="message">Enter Message:</label>
     <textarea type="textarea" name="message"  placeholder="Enter Message Content" id="messageInput" class="contactInput" maxlength="255" required></textarea>
 </div>
+
     <div ><input type="submit"  id="submitBtn" Value="Submit"></div>
 </div>
 </form>
 
 </div>
-                            
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+<script>
+VANTA.WAVES({
+  el: "#vanta-canvas",
+  mouseControls: false,
+  touchControls: false,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x12137,
+  waveSpeed: 0.20
+})
+
+</script>
+
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script type="text/javascript" src="contact.js"></script>
 </body>

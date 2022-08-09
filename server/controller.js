@@ -69,6 +69,7 @@ module.exports={
             lname varchar,
             email varchar,
             message varchar(255)
+
         );`).then(() => {
             console.log('DB seeded!')
             res.sendStatus(200)
@@ -85,5 +86,4 @@ module.exports={
             .then((dbRes) => res.status(200).send(dbRes))
             .catch((err) => console.log(err));
     }
-    
 }
