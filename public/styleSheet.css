@@ -264,6 +264,8 @@ label{
     width: 50%;
 }
 .contactInput{
+    border: 2px solid #0088a9;
+
     width: 50%;
 }
 
