@@ -298,3 +298,237 @@ label{
     color: #edf0f1;
 
   }
+  /* -------------------------------------------------------------------------------------MOBILE SUPPORT-------------------------------------------------------------------------------------------------------------------------- */
+  @media only screen and (max-width: 900px) {
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: transparent ;
+            font-family: Quicksand;
+            font-size: 10pt;
+            font-weight: 300;
+            color: #edf0f1;
+        
+        }
+    
+
+    li , button ,a {
+        color: #edf0f1;
+        text-decoration: none;
+        
+    }
+    header {
+        border-bottom: 2px solid #0088a9;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        padding: 4px 4%;    
+        padding-bottom: 11px;    
+        
+    }
+    
+    
+    #nav_links li{
+        display: inline-block;
+        padding: 0px 10px;
+    }
+    
+    #nav_links li a{
+       transition: all 0.3s ease 0s;
+       font-size: 8pt;
+    
+        
+    }
+    
+    #cBtn{
+        padding: 6px 15px;
+        font-size: 8pt;
+        background-color: #0088a9;
+    }
+
+    button{
+        padding: 7px 15px;
+    }
+    
+    img{
+        height: 30vh ;
+        padding: 3px ;
+    }
+    
+    
+    #intro {
+        font-size: 15pt;    
+    }
+    
+    #intro:hover {
+    color: #0088a9;
+    transition: all 0.3s ease 0s;
+    
+    }
+    #vanta-canvas{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #motivationPageNav{
+        /* border-bottom: 2px solid #0088a9; */
+        margin: 6px 12% -5px;
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+    
+    
+    }
+    #quoteBtn{
+        margin-left: 10px;
+    }
+    
+    #motivationPageContent{
+        margin-top: 15px;
+        display: block;
+    
+    }
+    
+     #quoteContainer{
+        padding: 5px;
+        position: relative;
+        display: block;    
+        justify-self: center;
+        box-shadow: 0 0 5px 2px #0088a9;
+        max-width: 90%;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 15px;
+    
+    }
+ 
+    #dogPictureContainer{
+        padding: 5px;
+        margin: 0px;
+        margin-top: 5px;
+        position: relative;
+        display: block;    
+        justify-self: center;
+        box-shadow: 0 0 5px 2px #0088a9;
+        max-width: 90%;
+        width: 85%;
+        margin: auto;
+    
+    
+    }
+    #dogPicBtn{
+    margin-right: 27px;
+    
+    }
+    
+     
+    #dogImg{
+        max-width: 225px ;
+        max-height: 30vh ;
+        width: auto;
+        height: auto;
+    }
+    
+    #timerContainer{
+    position: fixed;           
+bottom: 10px;  
+
+right: 50%; 
+left: 50%; 
+    } 
+    #timerHeader{
+        display: flex;
+        align-self: center;
+        font-size: 10px;
+        margin-top: 5px;
+        color: transparent;
+    
+    }
+    
+    #timerCircle{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+            width: fit-content;
+            height: fit-content;
+            margin: 0px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+         border-radius: 0px;
+            background: #0088a9;
+           
+    } 
+    
+    
+    #time{
+            text-align: center;
+            margin: auto;
+        
+    }
+    
+    #timerTime{
+        display: block;
+        font-size: 15px;
+        padding: 5px;
+        margin: auto;
+        background: #0088a9;
+    }
+   
+    
+    .options{
+margin: 0px;  
+    
+    }
+    .timer-btns{
+        padding: 3px ;
+        margin: 2px;
+        font-size: 9pt;
+    }
+
+    #contactTitle{
+        font-size: 15pt;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        justify-content: center;
+    } 
+    
+    #contactContainer{
+       
+        margin-top: 5px;
+        display: relative;
+    }
+    
+    #formContainer{
+    display: block;
+    width: 90%;
+    }
+    .nameDiv{
+        padding: 15px;
+        justify-content:left;
+    }
+    label{
+        width: 50%;
+    }
+    .contactInput{
+        border: 2px solid #0088a9;
+    
+        width: 50%;
+    }
+    
+    #submitBtn{
+        margin-top: 15px;
+        background-color: #0088a9;
+        padding: 9px 25px;
+        border: none;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+    }
+    
+    #submitBtn:hover{
+        cursor:pointer;
+        background-color: rgb(4, 114, 141);
+    
+    }
+    
+  }

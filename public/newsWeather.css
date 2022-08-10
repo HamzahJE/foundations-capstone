@@ -14,6 +14,7 @@
 li , button ,a {
     color: #24252A;
     text-decoration: none;
+    color: #24252A;
     
 }
 header {
@@ -22,6 +23,8 @@ header {
     justify-content:flex-end;
     align-items: center;
     padding: 35px 10%;
+    color: #24252A;
+    color: #24252A;
     
     
 }
@@ -29,17 +32,22 @@ header {
 
 #nav_links{
     list-style: none;
+    color: #24252A;
  
 }
 
 #nav_links li{
     display: inline-block;
     padding: 0px 20px;
+    color: #24252A;
+
 }
 
 #nav_links li a{
    transition: all 0.3s ease 0s;
    font-size: 20pt;
+   color: #24252A;
+
 
     
 }
@@ -47,6 +55,8 @@ header {
 #nav_links li a:hover{
     color: #0088a9;     
     cursor: pointer;
+    color: #24252A;
+
 
  }
 
@@ -68,6 +78,7 @@ button{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    color: #24252A;
 
 
 }
@@ -80,6 +91,8 @@ div{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    color: #24252A;
+
 }
 img{
     display:block;
@@ -87,6 +100,7 @@ img{
     margin-left: auto;
     height: 85vh ;
     padding: 8px ;
+    
 }
 
 
@@ -95,6 +109,8 @@ img{
     left: 8%;
     font-size: 35pt;
     transition: all 0.3s ease 0s;
+    color: #24252A;
+
 
 }
 
@@ -149,13 +165,12 @@ transition: all 0.3s ease 0s;
 #pageBody{
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     
 
 }
 #weatherNav{
     border-bottom: 2px solid #0088a9;
-    text-shadow: azure;
     font-size: 22pt;
     display: block;
     justify-content: space-between;
@@ -269,10 +284,241 @@ justify-content: center;
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
     text-align: center;
+    color: #24252A;
+
 
   }
   
   :-moz-placeholder {
     text-align: center;
+    color: #24252A;
 
+  }
+
+  @media only screen and (max-width: 900px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: transparent ;
+        font-family: Quicksand;
+        font-size: 10pt;
+        font-weight: 300;
+        color: #24252A;
+    
+    }
+    li , button ,a {
+        color: #24252A;
+        text-decoration: none;
+        
+    }
+    
+  
+    header {
+        border-bottom: 2px solid #0088a9;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        padding: 4px 4%;    
+        padding-bottom: 11px;    
+        
+    }
+    
+    
+    #nav_links li{
+        display: inline-block;
+        padding: 0px 10px;
+        color: #24252A;
+
+    }
+    
+    #nav_links li a{
+       transition: all 0.3s ease 0s;
+       font-size: 10pt;
+       color: #24252A;
+    
+        
+    }
+    
+    #nav_links li a:hover{
+        color: #0088a9;     
+        cursor: pointer;
+        
+    
+     }
+    
+    #cBtn{
+        padding: 6px 15px;
+        font-size: 8pt;
+        color: #edf0f1;
+        background-color: #0088a9;
+    }
+
+    button{
+        padding: 7px 15px;
+    }
+    
+    img{
+        height: 30vh ;
+        padding: 3px ;
+    }
+    
+    
+    #intro {
+        font-size: 15pt;   
+           color: #24252A;
+            
+        
+    }
+    
+    #intro:hover {
+    color: #0088a9;
+    transition: all 0.3s ease 0s;
+    
+    }
+    #cityInputLabel{
+        color: #24252A;
+        padding: 5px;
+        margin: 0px;
+        font-size: 10pt;
+        justify-content: center;
+    }
+    #cityInput{
+        display: block;
+        justify-content: center;
+        border:2px solid #0088a9;
+        padding: 3px;
+        font-size: 8pt;
+        color: #24252A;
+        
+    }
+    #submitCity{
+        margin-top: 5px;
+        padding: 2px 5px;
+      
+    }
+    
+    #newsPageNav{
+        margin: 10px 20% 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #pageBody{
+        margin-top: 5px;
+        display: flex;
+    justify-content: space-around;    
+    }
+    #weatherNav{
+        border-bottom: 2px solid #0088a9;
+        text-shadow: azure;
+        font-size: 10pt;
+        color: #24252A;
+        display: block;
+        justify-content: space-between;
+        margin: 0px;    
+    }
+    #newsNav{
+        border-bottom: 2px solid #0088a9;
+        text-shadow: azure;
+        font-size: 10pt;
+        margin: 0px;    
+        display: block;
+        justify-content: space-between;
+    }
+    
+    #newsContainer{
+        display: inline;
+        padding: 0px;
+        box-shadow: 0 0 10px 5px #0088a9;
+        margin: 0px;    
+        width: 40%;
+    }
+    
+    #weatherContainer{
+        display: inline;
+        padding: 0px;
+        box-shadow: 0 0 10px 5px #0088a9;
+        margin: 0px;    
+        width: 40%;
+     
+    }
+    
+    .weatherCardContainer{
+        display: inline-block;
+        justify-content: center;
+        color: #24252A;
+    }
+    .newsCardContainer{
+        display: inline-block;
+        justify-content: center;
+        color: #24252A;
+
+    }
+    
+    .newsCardImg{
+       max-width: 100px;
+       padding: 0;
+       margin-top: 10px;
+        width: auto;
+        height: auto;
+    }
+    
+    
+    .newsCardBtn:hover{
+        cursor:pointer;
+        background-color: rgb(4, 114, 141);
+    }
+    
+    .newsCardTitle{
+        margin-top: 5px;
+        padding: 0px;
+        text-align: center;
+        font-size: 9pt;
+    }
+    
+    .weatherCardCity{
+        margin-top: 5px;
+        padding: 0px;
+        text-align: left;
+        font-size: 10pt;
+    }
+    .weatherCardCountry{
+        text-align: left;
+        font-size: 8pt;
+    }
+    
+    .cardTemp{
+        display: block;
+        padding: 0px;
+        padding-top: 4px;
+        margin-bottom: -4px;
+    }
+    
+    .newsCardBtn{
+        color: #edf0f1;
+    
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        background-color: #0088a9;
+        padding: 5px 9px;
+        border: none;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .cardText{
+        font-size: 8pt;
+    }
+
+    .weatherIconImg{
+        padding: 0px;   
+        align-items: center;
+        width: auto;
+        height: auto;
+ 
+}
   }
