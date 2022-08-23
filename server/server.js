@@ -20,7 +20,7 @@ app.get('/api/quote',displayQuote)
 
 app.get('/api/dogPic',displayDogPic)
 
-app.get('/api/weather',getWeather)
+// app.get('/api/weather',getWeather)
 
 
 app.get('/api/news',getNews)
