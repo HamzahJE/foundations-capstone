@@ -38,7 +38,7 @@ app.post(`/seed`, seed)
 app.post(`/contact`, addContact)
 
 
-const port = process.env.PORT || 4020
+const port = process.env.PORT || 4007
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
 })

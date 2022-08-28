@@ -50,5 +50,5 @@ const getNews= (evt)=>{
 }
 
 cityForm.addEventListener('submit',getWeather)
-// cityForm.addEventListener('submit',getNews)
+cityForm.addEventListener('submit',getNews)
 
