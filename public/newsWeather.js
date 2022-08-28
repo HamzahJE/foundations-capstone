@@ -11,6 +11,7 @@ const getWeather= (evt)=>{
     .then(response =>{
         weatherContainer.innerHTML=''
         const weatherDiv=document.createElement('div')
+        console.log(response.data)
         weatherDiv.innerHTML=`
         <div class=weatherCardContainer>
         <div class="weatherCardCity">${response.data.city}</div>
@@ -23,12 +24,7 @@ const getWeather= (evt)=>{
         <div  class="weatherIcon">${response.data.desc}</div>
         </div>`
         weatherContainer.appendChild(weatherDiv)
-
-        console.log(`temp ${response.data.tempRead}`)
-        console.log(`countries ${response.data.country}`)
-        console.log(`city ${response.data.city}`)
-        console.log(`desc ${response.data.desc}`)
-
+        city.value=''
 })
 }
 
@@ -54,5 +50,5 @@ const getNews= (evt)=>{
 }
 
 cityForm.addEventListener('submit',getWeather)
-cityForm.addEventListener('submit',getNews)
+// cityForm.addEventListener('submit',getNews)
 

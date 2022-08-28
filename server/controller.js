@@ -61,13 +61,11 @@ module.exports = {
                 imgUrl: newsData.articles[0].urlToImage
             }
             res.status(200).send(newsObj)
-        })
+        }).catch(err => console.log(err))
     },
     seed: (req, res) => {
         sequelize.query(`
-        drop table if exists contactInfo;
-
-        create table contactInfo (
+        create table if not exists contactInfo (
             contact_id serial primary key, 
             fname varchar,
             lname varchar,
