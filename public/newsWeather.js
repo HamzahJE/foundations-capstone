@@ -18,11 +18,16 @@ const getWeather= (evt)=>{
         <div class="weatherCardBody">
         <div class="cardTemp">
         <div class="cardText">${response.data.tempRead}F</div>
-        <div class="cardText">${Math.round(((response.data.tempRead- 32) * 5/9)*10)/10}C</div>
+        <div class="cardText">${Math.round(((response.data.tempRead - 32) * 5/9)*10)/10}C</div>
         </div>
         <div  class="weatherIcon">${response.data.desc}</div>
         </div>`
         weatherContainer.appendChild(weatherDiv)
+
+        console.log(`temp ${response.data.tempRead}`)
+        console.log(`countries ${response.data.country}`)
+        console.log(`city ${response.data.city}`)
+        console.log(`desc ${response.data.desc}`)
 
 })
 }
