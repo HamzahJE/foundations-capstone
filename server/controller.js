@@ -39,10 +39,10 @@ module.exports = {
         }&units=imperial`).then(response => {
             weatherData = response.data
             weatherObj = {
-                'temp': weatherData.main,
+                'tempRead': weatherData.main.temp,
                 'city': weatherData.name,
                 'country': weatherData.sys.country,
-                'desc': weatherData.weather
+                'desc': weatherData.weather[0].main
             }
         }).catch(err => console.log(err))
         res.status(200).send(weatherObj)
