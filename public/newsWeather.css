@@ -231,19 +231,16 @@ transition: all 0.3s ease 0s;
 .weatherCardCity{
     margin-top: 60px;
     padding: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     text-align: left;
-    font-size: 25pt;
+    font-size: 32pt;
 }
 .weatherCardCountry{
     text-align: left;
-    font-size: 20pt;
+    font-size: 23pt;
 }
 
-.cardTemp{
-    display: block;
-    padding: 10px;
-}
+
 
 .newsCardBtn{
     color: #edf0f1;
@@ -261,24 +258,25 @@ transition: all 0.3s ease 0s;
 }
 .cardTemp{
     font-size: 18pt;
+    display: block;
+    padding: 10px;
 }
+
 .weatherIcon{
 display: flex;
 justify-content: center;
+margin-bottom: 60px;
+
 }
 .cardText{
+    padding-top: 5px;
     font-size: 18pt;
+
 }
 .weatherCardBody{
     display: block;
 }
-.weatherIconImg{
-    padding: 0px;   
-    align-items: center;
-    width: auto;
-    height: auto;
-    }
-   
+
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
