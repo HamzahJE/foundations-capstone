@@ -13,7 +13,6 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
 let randomQuote;
 let dogPic;
 let newsData;
-let weatherObj;
 module.exports = {
 
     displayQuote: async (req, res) => {
@@ -38,14 +37,14 @@ module.exports = {
             process.env.WEATHER_API_TOKEN
         }&units=imperial`).then(response => {
             weatherData = response.data
-            weatherObj = {
-                'tempRead': weatherData.main.temp,
-                'city': weatherData.name,
-                'country': weatherData.sys.country,
-                'desc': weatherData.weather[0].main
+            let weatherObj = {
+                tempRead: weatherData.main.temp,
+                city: weatherData.name,
+                country: weatherData.sys.country,
+                desc: weatherData.weather[0].main
             }
+            res.status(200).send(weatherObj)
         }).catch(err => console.log(err))
-        res.status(200).send(weatherObj)
 
     },
 
