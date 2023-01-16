@@ -10,6 +10,7 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
         }
     }
 });
+
 let randomQuote;
 let dogPic;
 let newsData;

@@ -1,6 +1,5 @@
 const quoteBtn= document.querySelector('#quoteBtn')
 const dogPicBtn= document.querySelector('#dogPicBtn')
-let baseURL="http://localhost:4007"
 
 const timerTime=document.querySelector('#timerTime')
 const timerBtn=document.querySelector('#startTimer')
@@ -20,7 +19,7 @@ const displayQuote=(evt)=>{
         let quote=res.data
           console.log(quote)
           const quoteDiv= document.createElement('div')
-           quoteDiv.innerHTML=(`<div>${quote}</div>`)
+          quoteDiv.innerHTML=(`<div>${quote}</div>`)
         quoteContainer.appendChild(quoteDiv)
         })
 }
